@@ -5,7 +5,7 @@ let allKeys = [],
 audio = new Audio(`tunes/a.wav`); 
 const playTune = (key) => {
     audio.src = `tunes/${key}.wav`;
-    audio.playbackRate = 2;
+  
     audio.play(); 
     const clickedKey = document.querySelector(`[data-key="${key}"]`); 
     clickedKey.classList.add("active"); 
